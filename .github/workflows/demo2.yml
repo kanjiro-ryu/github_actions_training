@@ -1,11 +1,8 @@
 name: GitHub Actions Demo2
 on: 
-  push:
-    branches:
-      - "*"
-  pull_request:
-    branches:
-      - main
+  workflow_run:
+    workflows: ["GitHub Actions Demo"]
+    types: [completed]
 
 jobs:
   two:
