@@ -1,5 +1,6 @@
 name: GA_Demo2
 on: 
+  # 下記のWFがデフォルトブランチで実行されないと動かない
   workflow_run:
     workflows: [GA_Demo]
     types: [completed]
